@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.content {
+    background-color: rgb(221, 221, 221);
+    justify-content: space-between;
+    border-radius: 15px;
+    align-items: center;
+    width: 960px;
+    height: 50%;
+    position: relative;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(106, 107, 107);
+    width: 40%;
+    height: 100%;
+    border-bottom-right-radius: 170px;
+    box-shadow: 2px 4px 0px rgb(255, 255, 255), 10px 15px 0px rgb(225, 1, 181);
+    border-top-left-radius: 15px;
+
+    left: 0;
+}
+
+.title {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.title-primary {
+    color: rgb(221, 221, 221);
+}
+
+.title-second {
+    color: rgb(106, 107, 107);
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description-primary {
+    color: rgb(221, 221, 221);
+}
+
+.description-second {
+    color: rgb(106, 107, 107);
+}
+
+.btn {
+    text-transform: uppercase;
+    color: rgb(221, 221, 221);
+    border-radius: 30px;
+    font-size: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    width: 150px;
+    align-self: center;
+    border: none;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid rgb(221, 221, 221);
+    transition: background-color .4s;
+}
+
+.btn-primary:hover {
+    background-color: rgb(244, 244, 244);
+    color: rgb(106, 107, 107);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.btn-second {
+    background-color: rgb(119, 120, 120);
+    border: 1px solid rgb(119, 120, 120);
+    transition: background-color .4s;
+}
+
+.btn-second:hover {
+    background-color: white;
+    border: 1px solid rgb(119, 120, 120);
+    color: rgb(119, 120, 120);
+}
+
+.first-content .second-column {
+    z-index: 11;
+}
+
+.first-content {
+    display: flex;
+}
+
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.link-social-media:not(:first-child) {
+    margin-left: 10px;
+}
+
+.link-social-media .item-social-media {
+    transition: background-color .4s;
+}
+
+.link-social-media:hover .item-social-media {
+    background-color: rgb(106, 107, 107);
+    color: white;
+    border-color: rgb(106, 107, 107);
+}
+
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+
+.item-social-media {
+    border: 1px solid rgb(106, 107, 107);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: rgb(106, 107, 107);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.form input {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: white;
+    outline: 0;
+    border-radius: 100px;
+    color: rgb(106, 107, 107);
+}
+
+.label-input {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    border-radius: 100px;
+}
+
+.icon-modify {
+    color: rgb(106, 107, 107);
+    padding: 0 15px;
+}
+
+
+/*------------------ SECOND CONTENT ----------------------*/
+
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+
+.password {
+    color: rgb(106, 107, 107);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 170px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: -2px 4px 0px rgb(255, 255, 255), -10px 15px 0px rgb(225, 1, 181);
+    animation: slidein 1.6s ease-in-out forwards;
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before {
+    animation: slideout 1.6s ease-in-out forwards;
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+    z-index: 13;
+}
+
+/* DESLOCAMENTO CONTEÚDO ATRAS DO CONTENT::BEFORE */
+
+.sign-in-js .first-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsquerda 3s ease-in-out forwards;
+}
+
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoDireita 3s ease-in-out forwards;
+}
+
+/* ANIMAÇÃO PARA ESTE CONTEÚDO */
+
+@keyframes deslocamentoEsquerda {
+
+    from {
+        left: 0;
+        opacity: 3;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: 0;
+    }
+
+    50% {
+        left: -100px;
+        opacity: 0;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDireita {
+
+    from {
+        left: 0;
+        opacity: 3;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        opacity: 0;
+    }
+
+    50% {
+        left: 100px;
+        opacity: 0;
+    }
+
+    to {
+        left: 110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+/*------------------ ANIMAÇÃO CSS ------------------*/
+
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    80% {
+        left: 50%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    80% {
+        right: 60%;
+        width: 60%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+
+/* ------------ RESPONSIVIDADE - VS/MOBILE ------------- */
+
+
+@media screen and (max-width: 1040px) {
+
+    .content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .first-content, .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first-column, .second-column {
+        width: 100%;
+    }
+
+    .sign-in-js .content::before {
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+        box-shadow: 2px -4px 0px rgb(255, 255, 255), 10px -15px 0px rgb(225, 1, 181);
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    /*--------- ANIMAÇÃO MOBILE CSS ---------*/
+
+    @keyframes deslocamentoEsquerda {
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        25% {
+            top: -80px;
+            opacity: 0;
+        }
+
+        50% {
+            top: -100px;
+            opacity: 0;
+        }
+
+        to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+    @keyframes deslocamentoDireita {
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 1;
+        }
+
+        25% {
+            top: 80px;
+            opacity: 0;
+        }
+
+        50% {
+            top: 100px;
+            opacity: 0;
+        }
+
+        to {
+            top: 110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+
+    @keyframes slidein {
+        from {
+            top: 0;
+            height: 40%;
+        }
+
+        80% {
+            top: 50%;
+            height: 50%;
+        }
+
+        to {
+            top: 60%;
+            height: 40%;
+        }
+    }
+
+    @keyframes slideout {
+        from {
+            top: 60%;
+            height: 40%;
+        }
+
+    
+        80% {
+            bottom: 50%;
+            height: 50%;
+        }
+
+        to {
+            bottom: 0;
+            height: 40%;
+        }
+    }
+
+} 
+
+@media screen and (max-width: 740px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+}
