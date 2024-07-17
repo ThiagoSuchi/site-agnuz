@@ -229,13 +229,13 @@
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: -2px 4px 0px rgb(255, 255, 255), -10px 15px 0px rgb(225, 1, 181);
-    animation: slidein 1.6s ease-in-out forwards;
+    animation: slidein 1.3s ease-in-out forwards;
 
     z-index: 12;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.6s ease-in-out forwards;
+    animation: slideout 1.3s ease-in-out forwards;
 
     z-index: 12;
 }
@@ -258,13 +258,13 @@
 .sign-in-js .first-content .second-column {
     z-index: -1;
     position: relative;
-    animation: deslocamentoEsquerda 3s ease-in-out forwards;
+    animation: deslocamentoEsquerda 2s ease-in-out forwards;
 }
 
 .sign-up-js .second-content .second-column {
     z-index: -1;
     position: relative;
-    animation: deslocamentoDireita 3s ease-in-out forwards;
+    animation: deslocamentoDireita 2s ease-in-out forwards;
 }
 
 /* ANIMAÇÃO PARA ESTE CONTEÚDO */
