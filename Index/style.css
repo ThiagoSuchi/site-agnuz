@@ -46,7 +46,7 @@ html {
     display: flex;
 }
 
-/* ESTILO DO CABEÇALHO*/
+/* ------------------------- ESTILO DO CABEÇALHO -------------------------- */
 
 #menu-scroll {
     right: 70px;
@@ -162,7 +162,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #bab9b9;
+    color: #e0d173;
     transition: .4s;
 }
 
@@ -316,6 +316,8 @@ form .btn-enviar input:hover {
 section.topo-do-site {
     padding: 85px 7%;
     margin-top: 100px;
+    position: relative;
+    padding-bottom: 0;
 }
 
 section.topo-do-site .flex {
@@ -357,10 +359,37 @@ section.topo-do-site .flex {
 }
 
 .topo-do-site .img-topo-site img {
+    width: 800px;
+    bottom: -13px;
+    left: 100px;
+    display: block;
     position: relative;
-    animation: levitar 3s ease-in-out infinite alternate;
-    box-shadow: 10px 15px 10px #cb09b480;
-    border-radius: 50%;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.topo-triangulo {
+    height: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.topo--triangulo-1 {
+    width: 310px;
+    background-color: #f5e1606a;
+}
+
+.topo--triangulo-2 {
+    width: 510px;
+    background-color: #ffec6e45;
+}
+
+.topo--triangulo-3 {
+    width: 710px;
+    background-color: #ffee7f81;
+    border-bottom-left-radius: 50px;
 }
 
 @keyframes levitar {
@@ -369,7 +398,7 @@ section.topo-do-site .flex {
     }
 
     100% {
-        top: 30px;
+        top: 25px;
     }
 }
 
@@ -415,6 +444,7 @@ section.produtos .flex{
     cursor: pointer;
     border-radius: 60px;
     position: relative;
+    border: 1px solid white;
 }
 
 .img-port:hover{
@@ -458,7 +488,7 @@ section.produtos .flex{
     justify-content: center;
     font-size: 24px;
     font-weight: 700;
-    background-color: #121212eb;
+    background-color: #121212e1;
     color: rgb(250, 236, 236);
     opacity: 0;
     transition: .5s;
@@ -522,7 +552,10 @@ form .btn-enviar input {
     cursor: pointer;
 }
 
-/* RODAPÉ DO SITE */
+
+/* ---------------------- RODAPÉ DO SITE --------------------- */
+
+
 footer {
     padding: 50px 4%;
     box-shadow: 0 0 40px 10px #949394a0;
@@ -547,6 +580,15 @@ footer .line-footer p i {
 
 footer .line-footer p a {
     color: white;
+}
+
+.texto-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    color: #7c7c7d;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .imagem {
